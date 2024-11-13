@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federal University Dutse - School Map</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevents horizontal scroll during animations */
+        }
+
+        /* Header styling */
+        header {
+            background-color: #199543;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: none;
+            <!-- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image.jpeg');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height:50vh; -->
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #C8943F;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+            animation-delay: 1s;
+        }
+
+        /* Button styling */
+        .cta-button {
+            background-color: #B55232;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+            animation-delay: 1.5s;
+        }
+
+        .cta-button:hover {
+            background-color: #8c3f26;
+        }
+
+        /* Slide-in animation */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        a{
+         color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🔍FUDBLO🔎</h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <h2>Welcome to the FUD Campus</h2>
+        <p>Explore the facilities, get to know the campus layout, and find your way around easily with our interactive school map.</p>
+        <button class="cta-button"><a href="map.html">Search For A Building</a></button>
+    </main>
+</body>
+</html>
